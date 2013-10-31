@@ -16,8 +16,8 @@
 
 include device/lge/g2-common/BoardConfigCommon.mk
 
-TARGET_KERNEL_CONFIG := d803_defconfig
+TARGET_KERNEL_CONFIG := kr_defconfig
 
-TARGET_OTA_ASSERT_DEVICE := d800,d802,d803,g2,galbi
+# TARGET_OTA_ASSERT_DEVICE := d800,d801,d802,d803,g2,galbi
 
-G2_DTS_TARGET := msm8974-g2-ca
+G2_DTS_TARGET := msm8974-g2-kr

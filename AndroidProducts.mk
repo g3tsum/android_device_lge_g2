@@ -1,5 +1,5 @@
 #
-# Copyright (C) 2013 The CyanogenMod Project
+# Copyright 2012 The Android Open Source Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -14,10 +14,6 @@
 # limitations under the License.
 #
 
-include device/lge/g2-common/BoardConfigCommon.mk
-
-TARGET_KERNEL_CONFIG := d802_defconfig
-
-TARGET_OTA_ASSERT_DEVICE := g2,d801,d803,d800,d802,galbi
-
-G2_DTS_TARGET := msm8974-g2-open_com
+PRODUCT_MAKEFILES := \
+    $(LOCAL_DIR)/aosp_g2.mk \
+    $(LOCAL_DIR)/full_g2.mk

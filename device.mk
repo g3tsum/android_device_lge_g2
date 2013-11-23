@@ -14,7 +14,7 @@
 # limitations under the License.
 #
 
-$(call inherit-product-if-exists, vendor/lge/vs980/vs980-vendor.mk)
+$(call inherit-product-if-exists, vendor/lge/g2/g2-vendor.mk)
 $(call inherit-product, device/lge/g2-common/g2.mk)
 
 ## overlays
@@ -23,7 +23,10 @@ DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
 PRODUCT_PROPERTY_OVERRIDES += \
         telephony.lteOnCdmaDevice=1 \
         ro.telephony.default_network=10
+        ro.cdma.home.operator.numeric=310120 \
+        ro.cdma.home.operator.alpha=Sprint \
+        ro.cdma.homesystem=64,65,76,77,78,79,80,81,82,83
 
+# sprint hidenmenu
 PRODUCT_COPY_FILES += \
-	frameworks/native/data/etc/android.hardware.telephony.gsm.xml:system/etc/permissions/android.hardware.telephony.gsm.xml \
-	frameworks/native/data/etc/android.hardware.telephony.cdma.xml:system/etc/permissions/android.hardware.telephony.cdma.xml
+    $(LOCAL_PATH)/SprintHiddenMenu.apk:system/app/SprintHiddenMenu.apk

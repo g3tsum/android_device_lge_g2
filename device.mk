@@ -22,5 +22,4 @@ DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
 
 PRODUCT_PROPERTY_OVERRIDES += \
         telephony.lteOnCdmaDevice=1 \
-        ro.telephony.default_network=10 \
-        persist.radio.mode_pref_nv10=1
+        ro.telephony.default_network=10

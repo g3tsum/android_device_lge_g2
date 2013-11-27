@@ -26,7 +26,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 PRODUCT_DEVICE := g2
 PRODUCT_NAME := full_g2
 PRODUCT_BRAND := LGE
-PRODUCT_MODEL := LG-G2 D801
+PRODUCT_MODEL := LG-G2 VS980
 PRODUCT_MANUFACTURER := lge
 PRODUCT_RESTRICT_VENDOR_FILES := false
 

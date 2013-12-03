@@ -26,3 +26,8 @@ PRODUCT_PROPERTY_OVERRIDES += \
         ro.cdma.home.operator.numeric=311480 \
         ro.cdma.home.operator.alpha=Verizon \
         ro.cdma.homesystem=64,65,76,77,78,79,80,81,82,83
+
+# NFC packages
+PRODUCT_PACKAGES += \
+    nfc_nci.g2 \
+    NfcNci

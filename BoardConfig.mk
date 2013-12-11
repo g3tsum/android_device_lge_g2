@@ -16,8 +16,8 @@
 
 include device/lge/g2-common/BoardConfigCommon.mk
 
-TARGET_KERNEL_CONFIG := vs980_defconfig
+TARGET_KERNEL_CONFIG := ls980_defconfig
 
-TARGET_OTA_ASSERT_DEVICE := g2,vs980,galbi
+TARGET_OTA_ASSERT_DEVICE := g2,ls980,galbi
 
-G2_DTS_TARGET := msm8974-g2-vzw
+G2_DTS_TARGET := msm8974-g2-spr
